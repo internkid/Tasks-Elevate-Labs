@@ -1,0 +1,18 @@
+﻿Local Network Open Ports Scan – Quick Notes 
+• Used Nmap (installed from official website) and optionally checked packets with 
+
+Wireshark. 
+• Found my local IP range using ipconfig. Range: 192.168.1.0/24. 
+• Ran: nmap -sS 192.168.1.0/24 
+• Noted open ports: 
+
+• Router (192.168.1.1): 80, 443 (web interfaces) 
+• Desktop (192.168.1.10): 22 (SSH), 445 (SMB) 
+• Old laptop (192.168.1.20): 3389 (RDP) 
+
+• Wireshark used briefly to see scan packets—SYN packets visible. 
+• Looked up port purposes: HTTP, HTTPS, SSH, SMB, RDP. 
+• Potential risks: SMB and RDP ports can be dangerous if left open—plan to disable 
+
+where not needed. 
+• Saved scan results to a text file.
