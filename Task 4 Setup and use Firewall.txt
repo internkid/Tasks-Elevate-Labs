@@ -1,0 +1,54 @@
+﻿Task 4 Report: Setup and Use a Firewall on Windows 
+
+Objective 
+Configure and test basic firewall rules to allow or block traffic on Windows. 
+
+Tools Used 
+Windows Defender Firewall with Advanced Security 
+
+Steps and Documentation 
+
+1. Open Firewall Configuration Tool 
+Press Win + R, type firewall.cpl, and press Enter. 
+Click Advanced settings on the left to open "Windows Defender Firewall with Advanced 
+Security". 
+
+2. List Current Firewall Rules 
+In the left pane, select Inbound Rules to view existing rules. 
+
+3. Add Rule to Block Inbound Traffic on Port 23 (Telnet) 
+In Inbound Rules, click New Rule... in the right pane. 
+Select Port, click Next. 
+Choose TCP, enter 23 as the specific port. 
+Click Next, select Block the connection, then Next. 
+Ensure all profiles (Domain, Private, Public) are checked. 
+Click Next, give the rule a name like "Block Telnet Port 23", then click Finish. 
+
+4. Test the Block Rule 
+Attempt to connect to port 23 using Telnet from another device or the same PC (telnet 
+localhost 23). 
+The connection should be refused, confirming the block rule is working. 
+
+5. Add Rule to Allow SSH (Port 22) 
+Repeat steps in #3, but use port 22 and select Allow the connection instead of block.  
+Alternatively, use Command Prompt as administrator: 
+netsh advfirewall firewall add rule name="Allow SSH Port 22" dir=in action=allow 
+protocol=TCP localport=22 
+
+6. Remove the Test Block Rule to Restore Original State 
+In Inbound Rules, find "Block Telnet Port 23", right-click it, and select Delete. 
+Or, from Command Prompt: 
+netsh advfirewall firewall delete rule name="Block Telnet Port 23" 
+
+
+
+7. Documented Commands/GUI Steps 
+All steps above detail the GUI and command-line methods used. 
+
+8. How Windows Firewall Filters Traffic 
+Windows Firewall checks inbound and outbound traffic against all active rules. 
+For each incoming connection, it checks for a matching rule (such as blocking TCP/23 or 
+allowing TCP/22). 
+If a rule matches and blocks or allows traffic, the firewall enforces the specified action, 
+protecting the system from unauthorized access. Rules can be adjusted as required to 
+secure critical services
