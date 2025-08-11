@@ -1,0 +1,22 @@
+Protocols                     Number of Identified
+
+HTTP :                         6
+HTTPS :                       44
+DNS :                           50
+TCP :                            3
+TLS (TCP) :                  1
+QUIC(UDP) :                 11
+
+Findings:
+
+The capture shows typical browsing activity with DNS lookups followed by TCP handshakes and HTTP requests.
+
+DNS traffic is minimal in size but critical for resolving hostnames.
+
+TCP carries the bulk of the data, including HTTP payloads.
+
+HTTP requests and responses confirm successful client-server communication.
+
+
+Conclusion:
+Wireshark successfully captured and filtered network traffic by protocol. At least three distinct protocols (TCP, DNS, HTTP) were identified, and packet analysis revealed the sequence of hostname resolution, connection establishment, and web content transfer.
