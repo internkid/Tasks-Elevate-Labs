@@ -1,0 +1,31 @@
+Task 6: Create a Strong Password and Evaluate Its Strength.
+
+   Passwords                                          Strength
+
+1. Priyansu123                                      Low(No special Character)
+2. priyansu@123                                  Low(No uppercase character)
+3. Priyansu@#                                     Low(No numbers)
+4. PRIYANSU@123                               Low(No lowercase character)
+5. 123456789                                        Low(Sequential password with no characters(Uc/Lc) or special characters)
+6. Priyansu@123                                  Medium(Vulnerable to Dictionary attacks)
+7. eUOu2ua44ZZgK0S                        Strong
+
+
+Password Complexity affects security in many ways :
+1. Increases Resistance to Brute-Force Attacks
+Complex passwords with a mix of uppercase, lowercase, numbers, and symbols expand the total number of possible combinations, making it exponentially harder for attackers to guess through brute-force methods.
+
+2. Reduces Vulnerability to Dictionary Attacks
+Simple passwords often use common words or patterns that appear in hacking dictionaries. Complex passwords avoid predictable sequences, lowering the chance of being cracked quickly using pre-compiled wordlists.
+
+3. Reduces the speed of Automated Cracking Tools
+Password-cracking software works faster on short, simple passwords. A longer, more complex password increases processing time for each guess, buying crucial time before a breach can occur.
+
+4. Protects Against Credential Stuffing
+When reused passwords are leaked, attackers try them across multiple accounts. A complex, unique password for each service prevents easy cross-account compromise.
+
+5. Balances Human Memory and Security
+While complexity improves security, overly complicated passwords can lead users to write them down or reuse them, which introduces new risks. The best approach is a long passphrase that’s memorable yet unpredictable.
+
+
+
