@@ -1,0 +1,29 @@
+Harmful Extensions & Their Effects
+
+1. Browser Hijackers
+
+These extensions often sneak in via bundled software and hijack browser settings:
+
+Astromenda, Babylon Toolbar, Trovi, Conduit/Search Protect, Vosteran, istartsurf.com, Snap.do, Search-daily.com – change your homepage, default search engine, inject ads, or redirect your searches .
+
+
+2. Spyware / Credential Theft
+
+SpyEye – captures keystrokes and form inputs in browsers like Chrome, Firefox, IE, and Safari, enabling theft of credentials and banking info .
+
+The “man-in-the-browser” tactic can alter legitimate banking transactions behind the scenes .
+
+
+3. Polymorphic & Impersonating Extensions
+
+Extensions that mimic legitimate ones, disabling them to capture your credentials stealthily istributed Malicious Extensions
+
+Recently, malicious apps disguised as VPNs, weather tools, or themes were downloaded 1.7 million times from the Chrome Web Store. They track user browsing and can redirect to dangerous sites .
+
+Firefox users faced the “GreedyBear” campaign—150 crypto-wallet-like extensions that later became credential-stealing tools using AI code .
+
+
+5. Scraping Botnets
+
+Mellowtel, a library used by over 200 extensions, covertly scrapes browsing content using your bandwidth and exposes internal network data .
+
